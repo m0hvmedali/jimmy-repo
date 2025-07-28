@@ -1,0 +1,27 @@
+body.hearts-explode::after {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/833/833472.png");
+    animation: hearts 1.5s ease-out forwards;
+    background-repeat: repeat;
+    background-size: 30px;
+    opacity: 0.3;
+  }
+  
+  @keyframes hearts {
+    0% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-200px) scale(2);
+    }
+  }
+  
